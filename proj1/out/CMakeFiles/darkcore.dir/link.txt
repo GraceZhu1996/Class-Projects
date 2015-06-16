@@ -1,2 +1,0 @@
-/usr/bin/ar cr lib/libdarkcore.a  CMakeFiles/darkcore.dir/core/SnakeSolver.cpp.o CMakeFiles/darkcore.dir/core/SnakeDirection.cpp.o CMakeFiles/darkcore.dir/core/SnakeMaze.cpp.o
-/usr/bin/ranlib lib/libdarkcore.a

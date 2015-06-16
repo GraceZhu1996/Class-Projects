@@ -1,2 +1,0 @@
-/usr/bin/ar cr lib/libics46projectcore.a  CMakeFiles/ics46projectcore.dir/core/Student.cpp.o
-/usr/bin/ranlib lib/libics46projectcore.a
