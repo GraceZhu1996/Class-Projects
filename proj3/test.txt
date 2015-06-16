@@ -1,0 +1,54 @@
+//INPUT
+BST
+wordset.txt
+biginput.txt
+DISPLAY
+
+AVL
+wordset.txt
+biginput.txt
+DISPLAY
+
+HASH SUM
+wordset.txt
+biginput.txt
+DISPLAY
+
+HASH ZERO
+wordset.txt
+biginput.txt
+DISPLAY
+
+HASH PRODUCT
+wordset.txt
+biginput.txt
+DISPLAY
+
+
+
+
+
+BST
+wordset.txt
+biginput.txt
+TIME
+
+AVL
+wordset.txt
+biginput.txt
+TIME
+
+HASH SUM
+wordset.txt
+biginput.txt
+TIME
+
+HASH ZERO
+wordset.txt
+biginput.txt
+TIME
+
+HASH PRODUCT
+wordset.txt
+biginput.txt
+TIME

@@ -1,0 +1,2 @@
+/usr/bin/ar cr lib/libothelloaistudent.a  CMakeFiles/othelloaistudent.dir/core/SuperSmartAI.cpp.o CMakeFiles/othelloaistudent.dir/core/Direction.cpp.o CMakeFiles/othelloaistudent.dir/core/myAI.cpp.o
+/usr/bin/ranlib lib/libothelloaistudent.a
