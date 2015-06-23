@@ -1,0 +1,96 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3399FF"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_vertical|center_horizontal|center"
+            android:layout_weight="3"
+            android:background="@android:color/background_light"
+            android:fadingEdge="none"
+            android:fillViewport="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/LL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                android:gravity="top|center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/fall_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:background="#CC0000"
+                    android:gravity="top"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/mester"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:minWidth="100dp"
+                            android:text="FALL"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </FrameLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/fallout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:orientation="vertical" >
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+			</LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/gpa_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/gpa_gpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+    	android:id="@+id/action_save" 
+    	android:title="Save" 
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_save" 
+        android:orderInCategory="2">
+    </item>
+   
+    <item android:id="@+id/action_clear" 
+        android:title="Clear" 
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_notification_clear_all" 
+        android:orderInCategory="90">
+        
+    </item>
+    <item android:id="@+id/action_new" android:orderInCategory="1" 
+        android:title="New" android:showAsAction="always" android:icon="@android:drawable/ic_menu_add"></item>
+    <item android:id="@+id/action_about" android:title="About" android:orderInCategory="100" android:showAsAction="never"
+        android:icon="@android:drawable/ic_dialog_info"></item>
+    <item android:id="@+id/action_preferences" android:title="Preferences" android:icon="@android:drawable/ic_menu_preferences"></item>
+
+</menu>

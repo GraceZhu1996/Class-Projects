@@ -1,0 +1,79 @@
+com.gpamanager.apk.About -> com.gpamanager.apk.About:
+    void onCreate(android.os.Bundle) -> onCreate
+com.gpamanager.apk.MainActivity -> com.gpamanager.apk.MainActivity:
+    java.lang.String Cu_User -> a
+    java.util.List profilelist -> b
+    android.content.SharedPreferences settings -> c
+    android.content.SharedPreferences Cu_profile -> d
+    android.content.SharedPreferences$Editor editor -> e
+    android.widget.LinearLayout Fall -> f
+    android.widget.LinearLayout Winter -> g
+    android.widget.LinearLayout Spring -> h
+    java.util.List FallClasses -> i
+    java.util.List WinterClasses -> j
+    java.util.List SpringClasses -> k
+    com.gpamanager.apk.MainActivity$GPA gpaFall -> l
+    com.gpamanager.apk.MainActivity$GPA gpaWinter -> m
+    com.gpamanager.apk.MainActivity$GPA gpaSpring -> n
+    android.content.DialogInterface$OnClickListener dialogClickListener -> o
+    android.content.DialogInterface$OnClickListener dragondeese -> p
+    java.io.File defpath() -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void updateGPA() -> b
+    void HideKeyBoard(android.view.View) -> HideKeyBoard
+    double getCumulative(com.gpamanager.apk.MainActivity$GPA,com.gpamanager.apk.MainActivity$GPA,com.gpamanager.apk.MainActivity$GPA) -> a
+    void StartUpLoad() -> c
+    void LoadProfile(int) -> a
+    void LoadProfiletolist() -> d
+    void StartUpChecks() -> e
+    void SetupLayout() -> f
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void writeString(java.io.File,java.lang.String[]) -> a
+    void writeDoub(java.io.File,double[][],int) -> a
+    java.lang.String[] gptograde(double[][]) -> a
+    void Save() -> g
+    void deleteprofile() -> h
+    void Load() -> i
+    void LoadclassAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.String[] readString(java.io.File) -> a
+    void Clear() -> j
+    void onTest(android.view.View) -> onTest
+    void onClassAdd(android.view.View) -> onClassAdd
+com.gpamanager.apk.MainActivity$1 -> com.gpamanager.apk.a:
+    com.gpamanager.apk.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gpamanager.apk.MainActivity$2 -> com.gpamanager.apk.b:
+    com.gpamanager.apk.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gpamanager.apk.MainActivity$GPA -> com.gpamanager.apk.c:
+    double[][] gparray -> a
+    java.lang.String[] classes -> b
+    double totalgp -> c
+    double totalch -> d
+    com.gpamanager.apk.MainActivity this$0 -> e
+    double Grade(java.lang.String) -> a
+    void addGrade(double,java.lang.String,java.lang.String) -> a
+    double getGPA() -> a
+com.gpamanager.apk.MainActivity$ToluLayout -> com.gpamanager.apk.d:
+    com.gpamanager.apk.MainActivity this$0 -> a
+    android.widget.LinearLayout NewClass(java.lang.String,java.lang.String,java.lang.String) -> a
+    android.widget.LinearLayout NewQuarter(java.lang.String) -> a
+com.gpamanager.apk.Preferences -> com.gpamanager.apk.Preferences:
+    android.content.SharedPreferences settings -> a
+    android.content.SharedPreferences$Editor editor -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void setLayout() -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+com.gpamanager.apk.WelcomeScreen -> com.gpamanager.apk.WelcomeScreen:
+    android.content.SharedPreferences$Editor editor -> a
+    android.content.SharedPreferences settings -> b
+    android.content.SharedPreferences pro -> c
+    java.lang.String Ac -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void HideKeyBoard(android.view.View) -> HideKeyBoard
+    void NewProfileWelcome(android.view.View) -> NewProfileWelcome

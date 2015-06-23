@@ -1,0 +1,30 @@
+android.UnusedStub
+com.google.android.gms.BuildConfig
+com.google.android.gms.R
+com.google.android.gms.R$attr
+com.google.android.gms.R$color
+com.google.android.gms.R$drawable
+com.google.android.gms.R$id
+com.google.android.gms.R$integer
+com.google.android.gms.R$string
+com.google.android.gms.R$styleable
+com.gpamanager.apk.BuildConfig
+com.gpamanager.apk.MainActivity$MyLClickListener
+com.gpamanager.apk.MainActivity$MyTouchListener
+com.gpamanager.apk.Preferences:
+    android.widget.RadioButton rb0
+    android.widget.RadioButton rb1
+    android.widget.RadioButton rb2
+com.gpamanager.apk.R
+com.gpamanager.apk.R$array
+com.gpamanager.apk.R$attr
+com.gpamanager.apk.R$color
+com.gpamanager.apk.R$dimen
+com.gpamanager.apk.R$drawable
+com.gpamanager.apk.R$id
+com.gpamanager.apk.R$integer
+com.gpamanager.apk.R$layout
+com.gpamanager.apk.R$menu
+com.gpamanager.apk.R$string
+com.gpamanager.apk.R$style
+com.gpamanager.apk.R$styleable

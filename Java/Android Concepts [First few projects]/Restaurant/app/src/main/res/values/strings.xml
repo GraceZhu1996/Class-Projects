@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Restaurant</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">Welcome Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="title_activity_menu_screen">MenuScreen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_no__menu__message">No_Menu_Message</string>
+    <string name="error_no_menu">Error: No menu found!\nLoad menu, then restart.</string>
+
+</resources>

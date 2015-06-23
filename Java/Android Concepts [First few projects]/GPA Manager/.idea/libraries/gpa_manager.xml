@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gpa manager">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/gpa manager.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,173 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#989898">
+
+    <RelativeLayout
+        android:id="@+id/rd"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        android:onClick="HideKeyBoard" >
+
+        <TextView
+            android:id="@+id/main_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/button1"
+            android:background="#FFFFFF"
+            android:ems="7"
+            android:hint="Economics 20"
+            android:inputType="textCapSentences"
+            android:maxLength="12"
+            android:maxWidth="150dp" />
+
+        <Spinner
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/classname"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/classname"
+            android:background="@android:color/white" />
+
+        <Spinner
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/grade"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_toRightOf="@+id/grade"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:minHeight="38dp"
+            android:minWidth="60dp"
+            android:onClick="onClassAdd"
+            android:text="@string/add"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/main_lbl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/main_lbl"
+            android:background="#FFFFFF"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/rd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#17185e" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+		<RadioGroup
+		    android:id="@+id/RG3"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:orientation="horizontal" >
+            
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="RadioButton"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                android:textColor="#FFFFFF" />
+
+			</RadioGroup>
+        </LinearLayout>
+    </FrameLayout>
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_weight="3"
+            android:onClick="HideKeyBoard" >
+
+            <LinearLayout
+                android:id="@+id/FLout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#989898"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:baselineAligned="false" >
+
+            </LinearLayout>
+        </ViewFlipper>
+
+        <LinearLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/gpa_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/gpa_gpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+</LinearLayout>
