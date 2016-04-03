@@ -1,0 +1,37 @@
+ls
+cd ICS53
+cd labs/
+cd lab1
+ls
+rm core.*
+rm -f core.*
+ls
+vim history.c
+ls
+vim history.c engdec.c
+vim history.c
+vim run.sh
+./run.sh 
+vim history.c 
+./run.sh 
+vim history.c 
+vim engdec.c
+vim history.c 
+./run.sh 
+vim engdec.c
+vim history.c 
+./run.sh 
+vim history.c 
+parseCmd
+BashRokens
+history
+mv history.c parsecmd.c
+find history
+ls
+rm history 
+vim run.sh 
+run.sh
+history | parsecmd > BashTokens
+ls
+cat BashTokens 
+history > testInput

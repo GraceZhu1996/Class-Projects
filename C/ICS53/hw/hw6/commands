@@ -1,0 +1,6 @@
+1) grep '[0-9]\+' *.c
+2) grep 'printf' *.c *.h
+3) sed -i '/^$/d' foo.c
+4) find ~/ \( -name "*.o" -o -name ".*out" \) -exec mv {} ~/,trash/ \;
+5) find /bin -type f
+6) find ~/ -type f -size +20b 

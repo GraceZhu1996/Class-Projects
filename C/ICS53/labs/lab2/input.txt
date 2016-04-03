@@ -1,0 +1,9 @@
+https://apis.google.com/js/client.js
+http://www.facebook.com/pages/Learn-the-Net/330002341216
+ftp://rtfm.mit.edu/pub/
+https://www.google.com/search?q=ebay
+www.learnthenet.com/web-at-a-glance/url-examples/
+http://my.ebay.com:80/ws/eBayISAPI.dll?MyEbayBeta&MyEbay=&gbh=1&guest=1#myfragment
+crasseux.com/books/ctutorial/Special-characters.html
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=c+special+characters
+https://docs.google.com/document/d/19WaLpbifylmdBZ8nXFGPvn3pL39rMJdGJPydJOFiZ1o/edit?pref=2&pli=1

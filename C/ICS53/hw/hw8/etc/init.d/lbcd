@@ -1,0 +1,69 @@
+#!/bin/bash
+# /etc/rc.d/init.d/lbcd
+# chkconfig: 35 98 98
+# description: Starts lbcd the named load balancer
+# processname: lbcd
+# Starts lbcd on lab computers
+# http://www.eyrie.org/~eagle/software/lbcd/
+
+# processname: atd
+
+# Source function library.
+. /etc/init.d/functions
+
+
+RETVAL=0
+
+REAL_SCRIPT=/usr/local/bin/lbcd
+
+
+function checkmount() {
+	if [ -e ${REAL_SCRIPT} ]; then
+		success  "Found script at ${REAL_SCRIPT}"
+		return 0
+	else
+		warning "Waiting for ${REAL_SCRIPT}" 
+		sleep 5
+		return 1
+        fi
+}
+
+function start() {
+	checkmount #Try two times
+	checkmount || return 1
+	echo "Starting ${SVCNAME}"
+	eval ${REAL_SCRIPT} 
+	RETVAL=$?
+	return $RETVAL
+}
+
+function stop() {
+	echo "Stopping ${SVCNAME}"
+	eval ${REAL_SCRIPT} -s
+	RETVAL=$?
+	return $RETVAL
+}
+
+function status() {
+	status ${REAL_SCRIPT}
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		stop
+		start
+		;;
+	status)
+		status
+		;;
+	*)
+		echo "Usage: /sbin/service lbcd  {start|restart|stop}"
+		exit 1
+	esac
+exit 0

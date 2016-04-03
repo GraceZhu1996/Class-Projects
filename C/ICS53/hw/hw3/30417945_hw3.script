@@ -1,0 +1,160 @@
+Script started on Wed 27 Jan 2016 12:52:55 PM PST
+]0;tsalako@elke-huebsch:~/ICS53/hw/hw3[?1034htsalako@elke-huebsch 12:52:55 ~/ICS53/hw/hw3 
+$ make clean
+rm 30417945_my_ls.o a.out
+]0;tsalako@elke-huebsch:~/ICS53/hw/hw3tsalako@elke-huebsch 12:53:00 ~/ICS53/hw/hw3 
+$ make
+gcc -c 30417945_my_ls.c
+gcc -ggdb main.c 30417945_my_ls.o
+]0;tsalako@elke-huebsch:~/ICS53/hw/hw3tsalako@elke-huebsch 12:53:02 ~/ICS53/hw/hw3 
+$ gdb ai[K.out 
+[?1034hGNU gdb (GDB) Red Hat Enterprise Linux (7.2-75.el6)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/tsalako/ICS53/hw/hw3/a.out...done.
+(gdb) list
+1	#include "30417945_my_ls.h"
+2	
+3	int main(int argc, char* argv[]){
+4	    int i;
+5	    if (argc < 2)
+6	        do_ls(".");
+7	    for (i = 1; i < argc; ++i)
+8	        do_ls(argv[1]);
+9	    return 0;
+10	}
+(gdb) break 5
+Breakpoint 1 at 0x4009f3: file main.c, line 5.
+(gdb) run ~/ICS53/
+Starting program: /home/tsalako/ICS53/hw/hw3/a.out ~/ICS53/
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffe138) at main.c:5
+5	    if (argc < 2)
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.149.el6_6.9.x86_64
+(gdb) print argc
+$1 = 2
+(gdb) print i
+$2 = 0
+(gdb) step
+7	    for (i = 1; i < argc; ++i)
+(gdb) nexu
+Undefined command: "nexu".  Try "help".
+(gdb) next
+8	        do_ls(argv[1]);
+(gdb) next
+[Thread debugging using libthread_db enabled]
+drwx------    4 tsalako ugrad         2048 Jan 25 18:31 
+drwx------    5 tsalako ugrad         2048 Jan 23 10:33 hw
+    drwx------    2 tsalako ugrad         2048 Jan 19 10:34 hw1
+        -rwx------    1 tsalako ugrad        15282 Jan 13 18:20 musiclib
+        -rw-------    1 tsalako ugrad         7542 Jan 11 0:8 musiclib.c
+        -rw-------    1 tsalako ugrad       327680 Jan 08 16:32 core.29989
+        -rw-------    1 tsalako ugrad           95 Jan 09 19:7 tolumusic.txt
+        -rw-------    1 tsalako ugrad       327680 Jan 08 16:32 core.29998
+        -rw-------    1 tsalako ugrad       327680 Jan 08 16:32 core.30007
+        -rw-------    1 tsalako ugrad       368640 Jan 11 0:0 core.16017
+        -rw-------    1 tsalako ugrad           48 Jan 11 0:9 myMusic
+        -rw-------    1 tsalako ugrad           43 Jan 13 18:22 Nonexist
+    drwx------    2 tsalako ugrad         4096 Jan 25 18:27 hw2
+        -rw-r--r--    1 tsalako ugrad         8689 Jan 25 18:27 30417945_my_strings.c
+        -rw-------    1 tsalako ugrad         7542 Jan 20 20:22 30417945_musiclib.txt
+        -rw-r--r--    1 tsalako ugrad         3499 Jan 20 21:9 30417945_parse_c.c
+    drwx------    3 tsalako ugrad         4096 Jan 27 12:53 hw3
+        -rw-------    1 tsalako ugrad         3713 Jan 27 12:29 30417945_my_ls.c
+        -rw-------    1 tsalako ugrad          246 Jan 27 12:45 Makefile
+        -rw-------    1 tsalako ugrad            0 Jan 27 12:52 hw3.script
+        drwx------    3 tsalako ugrad         2048 Jan 23 18:8 sample
+            drwx------    3 tsalako ugrad         2048 Jan 23 18:8 sample2
+                drwx------    2 tsalako ugrad         2048 Jan 23 18:8 345
+        -rw-------    1 tsalako ugrad           61 Jan 27 10:31 30417945_my_ls.h
+        -rw-------    1 tsalako ugrad          183 Jan 27 10:31 main.c
+        -rwx------    1 tsalako ugrad        13265 Jan 27 12:53 a.out
+        -rw-------    1 tsalako ugrad         6976 Jan 27 12:53 30417945_my_ls.o
+        -rw-r--r--    1 tsalako ugrad     73371343 Dec 28 14:27 20151228_142654.mp4
+drwx------    6 tsalako ugrad         2048 Jan 25 18:43 labs
+    drwx------    2 tsalako ugrad         2048 Jan 05 17:6 lab0
+        -rwx------    1 tsalako ugrad         6441 Jan 05 15:42 a.out
+        -rwx------    1 tsalako ugrad         7157 Jan 05 16:50 avg
+        -rw-------    1 tsalako ugrad           80 Jan 05 15:33 main.c
+        -rw-------    1 tsalako ugrad          253 Jan 05 17:6 avg.c
+        -rw-------    1 tsalako ugrad       356352 Jan 05 15:58 core.15043
+        -rw-------    1 tsalako ugrad           42 Jan 05 16:23 numbers.dat
+        -rw-------    1 tsalako ugrad       356352 Jan 05 15:59 core.15064
+        -rw-------    1 tsalako ugrad       360448 Jan 05 16:50 core.21805
+    drwx------    2 tsalako ugrad         2048 Jan 19 8:50 lab1
+        -rwx------    1 tsalako ugrad        10508 Jan 12 18:1 engdec
+        -rw-------    1 tsalako ugrad         4145 Jan 12 18:1 engdec.c
+        -rwx------    1 tsalako ugrad           50 Jan 14 14:15 run.sh
+        -rw-------    1 tsalako ugrad           36 Jan 14 14:52 out
+        -rw-------    1 tsalako ugrad           28 Jan 14 16:27 littleinput
+        -rw-------    1 tsalako ugrad       225280 Jan 14 14:13 core.26519
+        -rw-------    1 tsalako ugrad       225280 Jan 14 14:12 core.26496
+        -rw-------    1 tsalako ugrad       225280 Jan 14 14:11 core.26442
+        -rw-------    1 tsalako ugrad          434 Jan 14 13:59 testInput
+        -rw-------    1 tsalako ugrad           17 Jan 14 13:57 BashTokens
+        -rwx------    1 tsalako ugrad         9492 Jan 14 16:27 parsecmd
+        -rw-------    1 tsalako ugrad         1993 Jan 19 8:50 parsecmd.c
+    drwx------    2 tsalako ugrad         2048 Jan 26 16:53 lab3
+        -rw-------    1 tsalako ugrad         2195 Jan 26 14:8 main_wc.c
+        -rw-------    1 tsalako ugrad          858 Jan 26 16:49 wordcount.c
+        -rwx------    1 tsalako ugrad        10229 Jan 26 16:49 a.out
+        -rw-------    1 tsalako ugrad           33 Jan 26 10:40 file
+        -rw-------    1 tsalako ugrad       188416 Jan 26 10:45 core.12105
+        -rw-------    1 tsalako ugrad       188416 Jan 26 10:46 core.12262
+        -rw-------    1 tsalako ugrad       188416 Jan 26 10:46 core.12311
+        -rw-------    1 tsalako ugrad       188416 Jan 26 10:47 core.12342
+        -rw-------    1 tsalako ugrad         2730 Jan 26 16:53 main_du.c
+        -rw-------    1 tsalako ugrad       327680 Jan 26 16:26 core.2628
+    drwxr-xr-x    2 tsalako ugrad         2048 Jan 25 13:53 lab2
+        -rwx------    1 tsalako ugrad        10050 Jan 19 17:0 parseurl
+        -rw-r--r--    1 tsalako ugrad          544 Jan 19 17:0 input.txt
+        -rw-r--r--    1 tsalako ugrad         3655 Jan 18 15:16 parseurl.c
+        -rw-------    1 tsalako ugrad         1695 Jan 25 13:53 countchars.c
+        -rwx------    1 tsalako ugrad         9472 Jan 19 16:15 countchars
+        -rw-------    1 tsalako ugrad         3829 Jan 19 16:39 lab2p1.c
+        -rw-------    1 tsalako ugrad           19 Jan 19 16:6 simple
+7	    for (i = 1; i < argc; ++i)
+Missing separate debuginfos, use: debuginfo-install sssd-client-1.11.6-30.el6_6.4.x86_64
+(gdb) next
+9	    return 0;
+(gdb) next
+10	}
+(gdb) next
+0x0000003be8a1ed5d in __libc_start_main () from /lib64/libc.so.6
+(gdb) nx[Kext
+Single stepping until exit from function __libc_start_main,
+which has no line number information.
+
+Program exited normally.
+(gdb) q
+]0;tsalako@elke-huebsch:~/ICS53/hw/hw3tsalako@elke-huebsch 12:54:09 ~/ICS53/hw/hw3 
+$ make clean
+rm 30417945_my_ls.o a.out
+]0;tsalako@elke-huebsch:~/ICS53/hw/hw3tsalako@elke-huebsch 12:54:19 ~/ICS53/hw/hw3 
+$ cat Makefile 
+CC = gcc
+CCFLAGS = -ggdb
+SOURCE = main.c 30417945_my_ls.o
+MY_LS = 30417945_my_ls.h 30417945_my_ls.c
+
+all: main
+
+30417945_my_ls.o: $(MY_LS)
+	$(CC) -c 30417945_my_ls.c
+
+main: $(SOURCE)
+	$(CC) $(CCFLAGS) $(SOURCE)
+
+clean:
+	rm 30417945_my_ls.o a.out
+]0;tsalako@elke-huebsch:~/ICS53/hw/hw3tsalako@elke-huebsch 12:54:25 ~/ICS53/hw/hw3 
+$ exit
+exit
+
+Script done on Wed 27 Jan 2016 12:54:32 PM PST

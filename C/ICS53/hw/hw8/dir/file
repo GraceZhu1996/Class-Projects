@@ -1,0 +1,13 @@
+total 88K
+-rw------- 1 tsalako ugrad  575 Feb 28 03:38 client_handler.c
+-rw------- 1 tsalako ugrad  492 Feb 28 03:38 client_handler.h
+-rwx------ 1 tsalako ugrad  12K Feb 28 03:38 cp_client*
+-rw------- 1 tsalako ugrad 3.3K Feb 28 03:38 cp_client.c
+-rwx------ 1 tsalako ugrad  13K Feb 28 03:38 cp_server*
+-rw------- 1 tsalako ugrad 5.4K Feb 28 03:38 cp_server.c
+-rw------- 1 tsalako ugrad    0 Feb 28 03:38 file
+-rwx------ 1 tsalako ugrad 9.5K Feb 28 03:38 ls_client*
+-rw------- 1 tsalako ugrad 2.0K Feb 28 03:38 ls_client.c
+-rwx------ 1 tsalako ugrad  12K Feb 28 03:38 ls_server*
+-rw------- 1 tsalako ugrad 4.5K Feb 28 03:38 ls_server.c
+-rw------- 1 tsalako ugrad  304 Feb 28 03:38 Makefile

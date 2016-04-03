@@ -1,0 +1,24 @@
+total 204K
+-rw------- 1 tsalako ugrad 316K Feb 20 12:53 core.6631
+drwx------ 3 tsalako ugrad 2.0K Feb 21 17:58 dir/
+-rwxr-xr-x 1 tsalako ugrad  444 Feb 29 14:49 dircheck.sh*
+-rw------- 1 tsalako ugrad  966 Feb 24 12:05 existing
+-rw------- 1 tsalako ugrad    0 Feb 29 15:21 file
+-rwxr-xr-x 1 tsalako ugrad   95 Feb 29 15:13 find_loops.sh*
+-rw------- 1 tsalako ugrad    0 Feb 19 20:56 head
+-rw------- 1 tsalako ugrad   28 Feb 24 17:45 input
+-rw------- 1 tsalako ugrad 1.4K Feb 24 18:00 ioredirect.c
+-rw------- 1 tsalako ugrad  263 Feb 24 11:29 ioredirect.h
+-rw------- 1 tsalako ugrad 4.0K Feb 24 18:00 ioredirect.o
+-rw------- 1 tsalako ugrad    0 Feb 21 09:54 Kate Tho
+-rw------- 1 tsalako ugrad   12 Feb 24 17:43 lol
+-rw------- 1 tsalako ugrad  188 Feb 24 12:04 Makefile
+-rwxr-xr-x 1 tsalako ugrad 2.2K Feb 24 17:20 my_find.sh*
+-rwx------ 1 tsalako ugrad  14K Feb 24 18:12 my_shell*
+-rw------- 1 tsalako ugrad 4.1K Feb 27 18:32 my_shell.c
+-rwxr-xr-x 1 tsalako ugrad  374 Feb 24 17:37 my_which.sh*
+-rw------- 1 tsalako ugrad  966 Feb 24 18:13 newout
+-rw------- 1 tsalako ugrad  966 Feb 24 18:13 newout2
+-rw------- 1 tsalako ugrad    0 Feb 24 18:01 out
+-rw------- 1 tsalako ugrad    0 Feb 24 17:50 out1
+-rw------- 1 tsalako ugrad  966 Feb 24 17:46 out2

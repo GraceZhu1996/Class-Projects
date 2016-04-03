@@ -1,0 +1,11 @@
+total 92
+-rwx------ 1 tsalako ugrad  8318 Feb 11 17:14 handle_signals
+-rw------- 1 tsalako ugrad  1308 Feb 11 17:14 handle_signals.c
+-rw------- 1 tsalako ugrad  1194 Feb 11 17:04 ioredirect.c
+-rw------- 1 tsalako ugrad   263 Feb 11 17:05 ioredirect.h
+-rw------- 1 tsalako ugrad  3720 Feb 11 17:14 ioredirect.o
+-rw------- 1 tsalako ugrad   336 Feb 11 15:01 Makefile
+-rwx------ 1 tsalako ugrad 11779 Feb 11 17:14 my_shell
+-rw------- 1 tsalako ugrad  1998 Feb 11 17:14 my_shell.c
+-rw------- 1 tsalako ugrad     0 Feb 11 17:15 out
+-rwx---r-x 1 tsalako ugrad 42163 Feb 10 20:44 vimedits.rtf
