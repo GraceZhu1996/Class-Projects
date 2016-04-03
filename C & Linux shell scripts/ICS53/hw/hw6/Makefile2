@@ -1,0 +1,23 @@
+CC = gcc
+CCFLAGS = -ggdb
+PRODUCT_SOURCE = product.c
+SHELL_SOURCE = my_shell.c ioredirect.o
+IO_SOURCE = ioredirect.c ioredirect.h
+all: product my_shell
+
+
+product: $(PRODUCT_SOURCE)
+	gcc  $(CCFLAGS) $(PRODUCT_SOURCE) -o product
+
+my_shell: $(SHELL_SOURCE)
+	gcc $(CCFLAGS) $(SHELL_SOURCE) -o my_shell
+
+ioredirect.o: $(IO_SOURCE)
+	gcc -c ioredirect.c
+
+clean:
+	rm product my_shell ioredirect.o
+
+strip: $(SHELL_SOURCE) $(PRODUCT_SOURCE)
+	gcc $(SHELL_SOURCE) -o my_shell
+	gcc $(PRODUCT_SOURCE) -o product

@@ -1,0 +1,15 @@
+CC = gcc
+CCFLAGS = -ggdb
+SOURCE = 30417945_main.c 30417945_my_ls.o
+MY_LS = 30417945_my_ls.h 30417945_my_ls.c
+
+all: main
+
+30417945_my_ls.o: $(MY_LS)
+	$(CC) -c 30417945_my_ls.c
+
+main: $(SOURCE)
+	$(CC) $(CCFLAGS) $(SOURCE)
+
+clean:
+	rm 30417945_my_ls.o a.out
